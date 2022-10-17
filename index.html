@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.4.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Covid-19 Reports</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">J. Kapuku</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Jeremie Kapuku</h6>
+              <span>Software Developer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-file-earmark"></i>
+          <span>Blank</span>
+        </a>
+      </li><!-- End Blank Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Covid-19 Cases in Ireland - Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Healthcare Workers <span>| Total Cases</span></h5>
+                  <div class="d-flex align-items-center">
+                   
+                    <div class="ps-3">
+                      <h6>33,440,141</h6>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+            <!-- Revenue Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+                <div class="card-body">
+                  <h5 class="card-title">Hospitalised Cases <span>| Total Cases</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="ps-3">
+                      <h6>16,172,778</h6>                    
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Revenue Card -->
+
+            <!-- Customers Card -->
+            <div class="col-xxl-4 col-xl-12">
+
+              <div class="card info-card customers-card">
+                <div class="card-body">
+                  <h5 class="card-title">ICU Cases <span>| Total Cases</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="ps-3">
+                      <h6>1,414,380</h6>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
+            <!-- Reports -->
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Covid-19 Cases <span>/Over 3 Years</span></h5>
+
+                  <!-- Line Chart -->
+                  <div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: '2020 Cases',
+                          data: [0,1, 27041, 385688, 734906, 759354, 850597, 965766, 1519812, 2046594, 2472499],
+                        }, {
+                          name: '2021 Cases',
+                          data: [5049393, 5887247, 7081881, 7294158, 7940881, 8034570, 10173711, 11161784, 12925774, 15310602, 20474317]
+                        },{
+						  name: '2022 Cases',
+						  data: [332020415, 35131722, 42684820, 44984133, 47921258, 47458568, 50599072, 51242162, 21569680]
+						}],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.3,
+                            opacityTo: 0.4,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2
+                        },
+                        xaxis: {
+                          type: 'date',
+                          categories: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November" , "December"]
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'dd/MM/yy HH:mm'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>
+                  <!-- End Line Chart -->
+
+                </div>
+
+              </div>
+            </div><!-- End Reports -->
+
+            <!-- Recent Sales -->
+              <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Conclusion</h5>
+             To conclude throughout the investigation process, I have discovered that the easing and un-easing of restrictions during the Covid-19 pandemic played a role in the rise of reported cases. I have discovered that this became evident during the visualization of my investigation. During the months of September – October displayed a large spike in Covid-19 cases, in fact the spike in October was the hardest spike, with re-introduction of restriction in December resulting an increase Covid-19 cases. This may be partly due to the extended period of easier restrictions and the restrictions being brought back during the month of Christmas, and people wanting to spend time with their loved ones, family, and friends. </br></br>
+
+			 The visualizations that I have used throughout my investigation is quite unique as it tells the story of what being told straight away without much background understanding of that dataset, other than reading the title. The visualization that I have used throughout my investigation has been seen before. However, I found the direct direction that each chart displays tells the story of each data point. Showing any pattern and/or trend especially with the advanced charts (Waterfall chart and Pareto chart). </br></br>
+
+			 A pattern that I discovered during investigation that I could not have seen before when viewing the raw data is the spike in young healthcare workers receiving Covid-19. I had thought that the younger generation of healthcare workers would be affected with the easing and un-easing of restrictions. However, the age group and how young they were was a shock to me. </br></br> 
+            </div>
+          </div><!-- End Default Card -->
+
+            <!-- Top Selling -->
+            <div class="col-12">
+              <div class="card top-selling overflow-auto">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                  <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Future recommended work</h5>
+			   My recommendations and directions for further analysis on this research would be to look deeper into way the number of Covid-19 cases spiked during the restrictive periods. I would recommend a day-to-day view on the number cases during those spikes alongside an infection source, to attempt to discover if the restrictions placed were 1 of 2 things. </br></br>
+			
+				<ol>
+					<li>
+						Helping the publics motivation by reducing the spread of Covid-19 
+					</li>
+					<li>
+						Creating a sense of unease that results in public refusal to obey the restrictions resulted from the frequent easing and un-easing. 
+					</li>
+				</ol>
+            </div>
+          </div><!-- End Default Card -->
+
+
+              </div>
+            </div><!-- End Top Selling -->
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+
+          <!-- Budget Report -->
+          <div class="card">
+            
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">Case Report <span>| This Year (2022)</span></h5>
+
+              <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
+                    legend: {
+                      data: ['Total Cases', 'Average Weekly Cases']
+                    },
+                    radar: {
+                      // shape: 'circle',
+                      indicator: [{
+                          name: 'Jan',
+                          max: 52000000
+                        },
+                        {
+                          name: 'Feb',
+                          max: 52000000
+                        },
+                        {
+                          name: 'Mar',
+                          max: 52000000
+                        },
+                        {
+                          name: 'Apr',
+                          max: 52000000
+                        },
+                        {
+                          name: 'May',
+                          max: 52000000
+                        },
+                        {
+                          name: 'Jun',
+                          max: 52000000
+                        },
+                        {
+                          name: 'Jul',
+                          max: 52000000
+                        },
+                        {
+                          name: 'Aug',
+                          max: 52000000
+                        },
+                        {
+                          name: 'Sept',
+                          max: 52000000
+                        }
+                      ]
+                    },
+                    series: [{
+                      name: 'Total Cases vs Weekly Cases',
+                      type: 'radar',
+                      data: [{
+                          value: [33020415, 35131722, 42684820, 44984133, 47921258, 47458568, 50599072 , 51242162, 21569680],
+                          name: 'Total Cases'
+                        },
+                        {
+                          value: [418720, 130554, 154406, 67686, 20198, 37862, 37862, 46949, 11137],
+                          name: 'Average Weekly Cases'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+
+            </div>
+          </div><!-- End Budget Report -->
+
+          <!-- Website Traffic -->
+          <div class="card">
+            <div class="card-body pb-0">
+              <h5 class="card-title">Hospitalised Age Group <span>| Over 3 Years</span></h5>
+
+              <div id="trafficChart" style="min-height: 500px;" class="echart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  echarts.init(document.querySelector("#trafficChart")).setOption({
+                    tooltip: {
+                      trigger: 'item'
+                    },
+                    legend: {
+                      top: '5%',
+                      left: 'center'
+                    },
+                    series: [{
+                      name: 'Access From',
+                      type: 'pie',
+                      radius: ['40%', '70%'],
+                      avoidLabelOverlap: false,
+                      label: {
+                        show: false,
+                        position: 'center'
+                      },
+                      emphasis: {
+                        label: {
+                          show: true,
+                          fontSize: '18',
+                          fontWeight: 'bold'
+                        }
+                      },
+                      labelLine: {
+                        show: false
+                      },
+                      data: [{
+                          value: 405922,
+                          name: 'Age 5'
+                        },
+                        {
+                          value: 290360,
+                          name: 'Age 5 - 14'
+                        },
+                        {
+                          value: 782735,
+                          name: 'Age 15 - 24'
+                        },
+                        {
+                          value: 1274866,
+                          name: 'Age 25 - 34'
+                        },
+                        {
+                          value: 1453421,
+                          name: 'Age 35 - 44'
+                        },
+						{
+                          value: 1743580,
+                          name: 'Age 45 - 54'
+                        },
+                        {
+                          value: 2084237,
+                          name: 'Age 55 - 64'
+                        },
+                        {
+                          value: 2682541,
+                          name: 'Age 64 - 74'
+                        },
+                        {
+                          value: 3306275,
+                          name: 'Age 75 - 84'
+                        },
+                        {
+                          value: 2145524,
+                          name: 'Age 85+'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+
+            </div>
+          </div><!-- End Website Traffic -->
+
+        </div><!-- End Right side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
